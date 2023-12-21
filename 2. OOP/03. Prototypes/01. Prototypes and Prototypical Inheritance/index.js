@@ -10,3 +10,6 @@ console.log(Object.getPrototypeOf(x) === Object.getPrototypeOf(y)) // true
 // toString() is not defined in x itself, but it defined in the prototype object
 console.log(x.toString());
 console.log(y.toString());
+
+// x ----> prototype of Object
+// y ----> prototype of Object
