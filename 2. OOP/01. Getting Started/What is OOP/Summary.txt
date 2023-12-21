@@ -1,0 +1,29 @@
+What is Object-Oriented Programming (OOP)?
+    Object oriented programming is a programming paradigm or style of programming
+    that is centered around OBJECTS, rather than function.
+
+4 Pillars of Object-Oriented Programming
+    • Encapsulation
+    • Abstraction
+    • Inheritance
+    • Polymorphism
+
+OOP combine a group of related variable and function into a unit.
+We call that unit an object. We refer the variable in an object as properties,
+and the function in an object as methods. This is the concept of ENCAPSULATION.
+
+Hide some property or methods to the be accessed from the outside.
+Make the interface of that object simpler. Object with few public properties 
+and methods make the object easier to be used. Hiding the complexity, this is ABSTRACTION.
+
+INHERITANCE allows you to reduce or eliminate redundant code by child object
+inheriting properties and methods from the parent object.
+
+POLYMORPHISM. Poly means many, morphism means form. In OOP, polymorphism
+is a technique that allows you to get rid of long 'if' or 'switch' statement.
+
+Benefit of OOP
+    • Encapsulation -> reduce complexity + increase reusability
+    • Abstraction -> hide details + reduce complexity + isolate impact of changes
+    • Inheritance -> eliminate redundant code
+    • Polymorphism -> refactor ugly switch/case statement
