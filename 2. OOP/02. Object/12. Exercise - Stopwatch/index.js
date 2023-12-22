@@ -4,7 +4,7 @@ function Stopwatch(){
     
     this.start = function(){
         if (running)
-            throw new Exception('Stopwatch has already started')
+            throw new Error('Stopwatch has already started')
 
         startTime = new Date()
         running = true
@@ -12,7 +12,7 @@ function Stopwatch(){
 
     this.stop = function(){
         if (!running)
-            throw new Exception('Stopwatch is not started')
+            throw new Error('Stopwatch is not started')
 
         endTime = new Date()
         running = false
