@@ -1,0 +1,61 @@
+To create package.json
+  npm init --yes
+
+package.json initial;
+{
+  "name": "es6-tooling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+To install dependency
+  npm i babel-cli@6.26.0 babel-core@6.26.0 babel-preset-env@1.6.1 --save-dev
+
+  Informtaion:
+    - bebel-cli for Command Line Interface like npm
+    - babel-core contains the logic for transpiling
+    - babel-preset-env contains all presets for many ES6 features like arrow function, class, const & let keyword, etc
+    - --save-dev means install the dependency as development machine dependencies, not in production machine
+
+package.json after installing dependency:
+{
+  "name": "es6-tooling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bable": "babel --presets env index.js -o build/index.js"        (we write this manually)
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
+
+"bable": "babel --presets env index.js -o build/index.js"
+  Information:
+    ○ babel -> the command interface
+    ○ --presets env -> using env preset
+    ○ index.js -> source file
+    ○ -o build/index.js -> output of transpiling code
+
+The script that we define under the script section, we can run them using npm
+  npm run babel
+
+In the package.json we are only compiling index.js
+Our application might have hundreds or thousands of files.
+We don't want to repeat this for every file.
+That's where we use Webpack. With webpack, we are going
+to get all our javascript files and put them in a bundle.
+Before putting them in a bundle, we are going to run each file through Babel
