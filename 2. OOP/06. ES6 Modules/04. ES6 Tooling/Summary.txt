@@ -1,0 +1,15 @@
+These tools are important if you are building browser application, if you are using Javascript in Node
+you don't have to worry of these tools.
+
+When using modern Javscript we need two kinds of tools: Transpiler & Bundler.
+○ Transpiler -> Tranlator + Compiler
+    It is a tool to convert modern javascript syntax into a code which all the browser can understand
+    Babel is the example of this.
+
+○ Bundler
+    or Module Bundler is responsible for combining all our Javascript files into a single file,
+    which we call a bundle. Webpack is one of popular bundler. We give all our Javascript files
+    to Webpack, Webpack will combine them into a single file. It will minify our code by getting
+    rid of all the white space and comments, and it will uglify the code to shorten the identifiers
+    (class, function, object, etc). It will reduce the size of the bundle.
+  
