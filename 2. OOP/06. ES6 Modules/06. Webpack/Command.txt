@@ -1,0 +1,25 @@
+Install webpack dependency globally
+  npm i -g webpack-cli@2.0.14 
+
+  information:
+    -g -> global, install globally so we can access it from every project
+
+Uninstall webpack dependency globally
+  npm uninstall -g webpack-cli
+
+Run webpack-cli (If you are asked to install webpack generator, then install, and then run again this script)
+  webpack-cli init
+
+"scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
+  }
+
+Transpiling & Bundling the javascript files. Look at package.json under script
+  npm run build
+
+Automatically transpiling & bundling when there is changes 
+in javascript files. Look at package.json under script
+  npm run watch
